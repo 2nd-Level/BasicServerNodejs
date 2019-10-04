@@ -1,8 +1,9 @@
 const express = require('express');
-// const helmet = require('helmet');
+const helmet = require('helmet');
 
-// const db = require('../data/db.js');
+
 
 const server = express();
+server.use(helmet())
 
 module.exports = server;
